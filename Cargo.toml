@@ -1,0 +1,21 @@
+[package]
+name = "seedpass"
+version = "0.1.0"
+authors = ["Guillermo Céspedes Tabárez <dev.dertin@gmail.com>"]
+edition = "2021"
+description = "A secure password generation tool based on a single master key using Argon2 and BIP-39"
+repository = "https://github.com/dertin/seedpass"
+license = "MIT OR Apache-2.0"
+keywords = ["password", "security", "argon2", "bip39"]
+categories = ["command-line-utilities", "cryptography"]
+documentation = "https://docs.rs/seedpass"
+
+[dependencies]
+mimalloc = { version = "*", features = ["secure"] }
+zeroize = { version = "1.8.1", features = ["zeroize_derive"] }
+sha3 = "0.10.8"
+hmac = "0.12.1"
+argon2 = "0.5.3"
+bip39 = "2.1.0"
+clap = { version = "4.5.27", features = ["derive"] }
+thiserror = "2.0.11"
