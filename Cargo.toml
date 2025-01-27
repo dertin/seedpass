@@ -1,6 +1,6 @@
 [package]
 name = "seedpass"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Guillermo Céspedes Tabárez <dev.dertin@gmail.com>"]
 edition = "2021"
 description = "A secure password generation tool based on a single master key using Argon2 and BIP-39"
